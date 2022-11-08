@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="#">Bienvenida</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -12,16 +12,22 @@
          <router-link class="nav-link active" aria-current="page" to="/">Home</router-link>
         </li>
         <li class="nav-item">
-         <!-- ABOUT -->
-         <router-link v-if="existeUsuario" class="nav-link active" aria-current="page" to="/about">About</router-link>
+         <!--HABILIDADES -->
+         <router-link v-if="existeUsuario" class="nav-link active" aria-current="page" to="/habilidades">Habilidades</router-link>
 
         </li>
-       
+        
+        
       </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success me-2" type="submit">Search</button>
-      </form>
+
+     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li>
+          <div class="text-center">
+       <img src="../assets/logo_poke.png" class="rounded d-block me-2"  width="250" height="70">
+      </div>
+    </li>
+     </ul>
+      
 
       <!-- Iniciar sesión --> 
 <button v-if="!existeUsuario" type="button" class="btn btn-outline-primary mx-2" 
