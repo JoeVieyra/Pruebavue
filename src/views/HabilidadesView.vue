@@ -1,18 +1,30 @@
 <template>
-  <Navbar/>
-  <div class="habilidades">
-    <h1>This is an about page</h1>
-  </div>
+<Navbar/>
+<PokemonCard/>
+ <div id="habilidades">
+
+</div> 
+
   
 </template>
+
+
 <script>
 // @ is an alias to /src
 import Navbar from '@/components/Navbar.vue'
+import PokemonCard from '@/components/PokemonCard.vue'
 
 export default {
-  name: 'HabilidadesView',
+data: () => ({
+      show: false,
+    }),
+name:"habilidades",
   components: {
-    Navbar
+    Navbar,
+    PokemonCard
+
   }
+ 
+  
 }
 </script>

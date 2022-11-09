@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <v-toolbar class="navbar navbar-expand-lg navbar-light bg-light" height="100">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Bienvenida</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,10 +20,10 @@
         
       </ul>
 
-     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+     <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
       <li>
           <div class="text-center">
-       <img src="../assets/logo_poke.png" class="rounded d-block me-2"  width="250" height="70">
+       <v-img src="../assets/logo_poke.png" class="rounded d-block me-2"  width="250" height="70"> </v-img>
       </div>
     </li>
      </ul>
@@ -52,7 +52,7 @@
 </button> 
     </div>
   </div>
-</nav>
+</v-toolbar>
 <!-- //// Modal - Registrarse //// -->
 <div class="modal fade" id="registro">
   <div class="modal-dialog">

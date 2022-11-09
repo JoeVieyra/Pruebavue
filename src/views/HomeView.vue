@@ -1,15 +1,20 @@
 <template>
-<Navbar/>
+  <Navbar/>
+ 
 </template>
 
 <script>
-// @ is an alias to /src
-import Navbar from '@/components/Navbar.vue'
+import { defineComponent } from 'vue';
 
-export default {
+
+// Components
+import Navbar from '../components/Navbar.vue';
+
+export default defineComponent({
   name: 'HomeView',
+
   components: {
     Navbar
-  }
-}
+},
+});
 </script>
